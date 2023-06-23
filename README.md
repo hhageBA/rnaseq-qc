@@ -20,7 +20,8 @@ STAGES:
 QUICK START:
 
 1. Prepare input files:
-    Metadata Requirements
+   
+    Metadata Requirements:
         The metadata file should include the following mandatory column:
     **SampleID:** should contain the name of the fastq file for each sample
     **SampleName:** refer to the name of the sample as you want it to appear in the figures 
@@ -37,11 +38,11 @@ QUICK START:
     - download ribosomal RNA database from https://github.com/sortmerna/sortmerna/tree/master/data/rRNA_databases
     - create index for hemoglobin transcript if your samples are from blood origin
 
-    Config file 
+    Config file:
     Prepare a config file similar to the one provided in the test dataset. The config file  mostly contain different paths to the necessary input files. 
 
 
-2. Create conda environement using provided yaml file 
+3. Create conda environement using provided yaml file 
     > conda env create -n rnaseq-qc -f rnaseq-qc.yaml
 
     Activate the conda environement

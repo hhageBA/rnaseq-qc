@@ -1,4 +1,4 @@
-RNASEQ-QCS is a bioinformatics pipeline that can be used for the quality control analysis of RNA sequencing data obtained from organism with an available reference genome and annotation. 
+RNASEQ-QC is a pipeline that can be used for the quality control analysis of RNA sequencing data obtained from an organism with an available reference genome and annotation. 
 
 STAGES:
     - preprocessing: 

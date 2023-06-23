@@ -1,0 +1,17 @@
+{
+    "analysis_type":"", # Name of the excel sheet in metadata
+    "analysis": "", # Name of the folder that will contain the output files
+    "metadata":"", # Path to metadata including name of the metadata 
+    "descriptive_sentence": "", # Description of the run to print the top of the multiQC report
+    "read_type":["_R1_001","_R2_001"], # can be _R1 and _R2
+    "sequencer": "", # Nextseq2000, Nextseq500,  Novaseq, SP_NextSeq, Miseq
+    "annotation":"", # Path to the gtf file including name of the file
+    "star_index":"/sps/bioaster.new/Data/Genomes/H.sapiens/GRCh38.77/Gencode_V37/STAR_index_2.7.9a", # Path to the STAR index 
+    "transcripts":"", # Path to the fasta transcript file
+    "bed":"", # Path to the bed annotation file including name of the file
+    "tmp_dir": "", # Path to a temporary directory
+    "tmp_sortmerna": "", # Path to a temporary directory
+    "db_rRNA": "", # Path to all fasta rfam and silva files, separated by a comma 
+    "globin_index":"", # Path to the index created from transcripts annotated as globin
+    "multiqc_param": "" # can be empty. Use this to pass an parameter to multiqc with -c "Path to multiqc_config.yaml"
+}

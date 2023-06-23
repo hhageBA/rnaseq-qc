@@ -1,0 +1,122 @@
+subtitle: "Quality Control of RNAseq data"
+intro_text: ""
+report_comment: ""
+
+ 
+show_analysis_paths: False
+show_analysis_time: False
+    
+sample_names_replace_exact: True
+
+exclude_modules:
+    - salmon
+
+extra_fn_clean_exts:
+    - '_fastp'
+    - '_sub'
+    - '.globin'
+    - '_R1'
+    - '_R2'
+    - '_R1_001'
+    - '_R2_001'
+    - '_R1_preprocessed'
+    - '_R2_preprocessed'
+    - '_R1_001_preprocessed'
+    - '_R2_001_preprocessed'
+
+fn_ignore_files:
+    - 'All_samples.*.geneBodyCoverage.txt'
+
+sp:
+    sortmerna:
+        fn: "*.rrna.out.log"
+
+module_order:
+    - fastqc:
+        name: 'FastQC (raw data)'
+        anchor: 'fastqc_raw'
+        info: 'This section of the report shows FastQC before adapter Trimming.'
+        target: ''
+        path_filters:
+            - '*/qc/*_fastqc.zip'
+    - fastp
+    - fastqc:
+        name: 'FastQC (Trimmed)'
+        anchor: 'fastqc_Trimmed'
+        info: 'This section of the report shows FastQC after adapter Trimming.'
+        path_filters:
+            - '*/preprocessing/FastQC/*_preprocessed_fastqc.zip'
+    - sortmerna:
+        name: 'rRNA proportion (sortmeRNA)'
+        info: 'rRNA proportion estimated on a subsample of 1M reads per sample.'
+    - bowtie2:
+        name: 'Globin proportion (bowtie2)'
+        info: 'Estimation of globin proportion by mapping reads over globin genes with bowtie2.'
+    - 'star'
+    - 'rseqc'
+    - custom_content
+        
+custom_content:
+  order: [rRNA_and_Globin_percentage, Gene_biotype_distribution, Number_of_detected_genes, Rarefaction_Curves, Normalized_counts_boxplot]
+
+  
+
+
+table_columns_visible:
+  FastQC (raw data):
+    percent_duplicates: True
+    percent_gc: True
+    avg_sequence_length: False
+    percent_fails: False
+    total_sequences: True
+    
+  fastp:
+    pct_duplication: False
+    after_filtering_q30_rate: True
+    after_filtering_q30_bases: False
+    after_filtering_gc_content: False
+    pct_surviving: True
+    pct_adapter: False
+  FastQC (Trimmed):
+    percent_duplicates: False
+    percent_gc: False
+    avg_sequence_length: True
+    percent_fails: False
+    total_sequences: True
+  rRNA proportion (sortmeRNA):
+    rRNA_pct: True
+  Globin proportion (bowtie2):
+    overall_alignment_rate: True
+  star:
+    uniquely_mapped_percent: True
+    uniquely_mapped: True 
+
+table_columns_name:
+  FastQC (raw data):
+    percent_duplicates: "[Raw] % Dup"
+    percent_gc: "[Raw] % GC"
+    total_sequences: "[Raw] M seq"
+    avg_sequence_length: "[Raw] Read len"
+    percent_fails: "[Raw] % Failed filters"
+  fastp:
+    pct_duplication: "[Raw] Dup rate"
+    after_filtering_q30_rate: "[Trim] % > Q30"
+    after_filtering_q30_bases: "[Trim] M bases > Q30"
+    after_filtering_gc_content: "[Trim] % GC"
+    pct_surviving: "[Trim] % pass"
+    pct_adapter: "[Trim] % Adapter-trimmed reads"
+  FastQC (Trimmed):
+    percent_duplicates: "[Trim] % Dup"
+    percent_gc: "[Trim] % GC"
+    avg_sequence_length: "[Trim] Read len"
+    total_sequences: "[Trim] M seq"
+    percent_fails: "[Trim] % Failed filters"
+  rRNA proportion (sortmeRNA):
+    rRNA_pct: "[Trim] % rRNA"
+  Globin proportion (bowtie2):
+    overall_alignment_rate: "[Trim] % Globin"
+  star:
+    uniquely_mapped_percent: "[Trim] % Aligned"
+    uniquely_mapped: "[Trim] M Aligned"
+    
+

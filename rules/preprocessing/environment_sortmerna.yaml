@@ -1,0 +1,6 @@
+channels:
+  - bioconda
+dependencies:
+  - sortmerna ==4.3.2
+  - seqtk ==1.3
+  

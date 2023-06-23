@@ -1,0 +1,5 @@
+channels:
+  - bioconda
+dependencies:
+  - star ==2.7.9a
+  - picard ==2.22.3

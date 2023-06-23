@@ -1,0 +1,10 @@
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+  - r
+dependencies:
+  - rseqc ==3.0.0
+  - fastqc=0.11.5
+  - multiqc=1.12
+  - r-base

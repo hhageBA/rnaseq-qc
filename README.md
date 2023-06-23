@@ -1,4 +1,4 @@
-RNASEQ-QCS is a bioinformatics pipeline for the quality control analysis of RNA sequencing data obtained from organism with an available reference genome and annotation. 
+RNASEQ-QCS is a bioinformatics pipeline that can be used for the quality control analysis of RNA sequencing data obtained from organism with an available reference genome and annotation. 
 
 STAGES:
     - preprocessing: 
@@ -13,11 +13,8 @@ STAGES:
         - RSeQC : quality control 
 
     - postprocessing:
-        - multiqc : regroup all previous qc
         - R : additional qc
-
-
-CONDA INSTALL: 
+        - multiqc : regroup all qc
 
 
 QUICK START:
@@ -44,7 +41,6 @@ QUICK START:
     Prepare a config file similar to the one provided in the test dataset. The config file  mostly contain different paths to the necessary input files. 
 
 
-
 2. Create conda environement using provided yaml file 
     > conda env create -n rnaseq-qc -f rnaseq-qc.yaml
 
@@ -52,7 +48,6 @@ QUICK START:
     > conda activate rnaseq-qc
 
     Run the pipeline with command line: 
-
-    snakemake --directory test/ --snakefile Snakefile --use-conda --conda-prefix path/to/conda --configfile test/config.json -p 
+    > snakemake --directory test/ --snakefile Snakefile --use-conda --conda-prefix path/to/conda --configfile test/config.json -p 
 
 

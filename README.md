@@ -20,7 +20,7 @@ STAGES:
 QUICK START:
 
 1. Prepare input files:
-    ## Metadata Requirements
+    Metadata Requirements
         The metadata file should include the following mandatory column:
     **SampleID:** should contain the name of the fastq file for each sample
     **SampleName:** refer to the name of the sample as you want it to appear in the figures 
@@ -30,14 +30,14 @@ QUICK START:
     **Include:** Specify 'Y' to include the sample in the analysis or 'N' to exclude it.
     **Path:** relative path that specifies the location of the fastq raw file relative to the current working directory  
 
-    ## Reference Genome and annotation files:
+   Reference Genome and annotation files:
     - Download from your favorite database: gtf, bed transcript files
     - Generate mapping indexes with STAR (STAR   --runMode genomeGenerate   --runThreadN 25   --genomeDir [OUTPUT_DIRECTORY]   --genomeFastaFiles [FASTA_FILE] --sjdbGTFfile [GTF8FILE]   --sjdbOverhang 74)
     - Generate correspondance file between gene id and gene biotype from gtf file  (use get_corresp_geneID_geneBiotype_from_gtf.py provided in script directory)
     - download ribosomal RNA database from https://github.com/sortmerna/sortmerna/tree/master/data/rRNA_databases
     - create index for hemoglobin transcript if your samples are from blood origin
 
-    ## Config file 
+    Config file 
     Prepare a config file similar to the one provided in the test dataset. The config file  mostly contain different paths to the necessary input files. 
 
 

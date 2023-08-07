@@ -1,0 +1,19 @@
+Module	Section	Sample Name	Source
+FastQC (raw data)	all_sections	Mouse1_1	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/qc/1_S1_R1_001_fastqc.zip
+FastQC (raw data)	all_sections	Mouse1_2	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/qc/2_S2_R1_001_fastqc.zip
+fastp	all_sections	Mouse1_1	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/preprocessing/Mouse1_1_fastp.json
+fastp	all_sections	Mouse1_2	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/preprocessing/Mouse1_2_fastp.json
+FastQC (Trimmed)	all_sections	Mouse1_2	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/preprocessing/FastQC/Mouse1_2_R1_001_preprocessed_fastqc.zip
+FastQC (Trimmed)	all_sections	Mouse1_1	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/preprocessing/FastQC/Mouse1_1_R1_001_preprocessed_fastqc.zip
+rRNA proportion (sortmeRNA)	all_sections	Mouse1_2.rrna	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/preprocessing/Mouse1_2.rrna.out.log
+rRNA proportion (sortmeRNA)	all_sections	Mouse1_1.rrna	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/preprocessing/Mouse1_1.rrna.out.log
+Globin proportion (bowtie2)	all_sections	Mouse1_2	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/preprocessing/Mouse1_2.globin.log
+Globin proportion (bowtie2)	all_sections	Mouse1_1	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/preprocessing/Mouse1_1.globin.log
+STAR	SummaryLog	Mouse1_1	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/mapping/Mouse1_1.Log.final.out
+STAR	SummaryLog	Mouse1_2	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/mapping/Mouse1_2.Log.final.out
+RSeQC	read_distribution	Mouse1_1_read_distrib	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/mapping/Mouse1_1_read_distrib.txt
+RSeQC	read_distribution	Mouse1_2_read_distrib	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/mapping/Mouse1_2_read_distrib.txt
+RSeQC	inner_distance	Mouse1_2	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/mapping/Mouse1_2.inner_distance_freq.txt
+RSeQC	inner_distance	Mouse1_1	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/mapping/Mouse1_1.inner_distance_freq.txt
+RSeQC	infer_experiment	Mouse1_2.infer_exp	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/mapping/Mouse1_2.infer_exp.txt
+RSeQC	infer_experiment	Mouse1_1.infer_exp	/sps/bioaster/Applications/CentOS7/Bioaster_scripts/rnaseq-QCs/test/Analyses/Mouse/Test/mapping/Mouse1_1.infer_exp.txt

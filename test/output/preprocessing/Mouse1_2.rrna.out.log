@@ -1,0 +1,36 @@
+ Command:
+    sortmerna -a 8 --ref genome_files/Mouse/rRNA_db/rfam-5.8s-database-id98.fasta ,genome_files/Mouse/rRNA_db/rfam-5s-database-id98.fasta ,genome_files/Mouse/rRNA_db/silva-arc-16s-id95.fasta ,genome_files/Mouse/rRNA_db/silva-arc-23s-id98.fasta ,genome_files/Mouse/rRNA_db/silva-bac-16s-id90.fasta ,genome_files/Mouse/rRNA_db/silva-bac-23s-id98.fasta ,genome_files/Mouse/rRNA_db/silva-euk-18s-id95.fasta ,genome_files/Mouse/rRNA_db/silva-euk-28s-id98.fasta --reads genome_files/Mouse/tmp/Mouse/Test/preprocessing/Mouse1_2_sub.fastq --aligned Analyses/Mouse/Test/preprocessing/Mouse1_2.rrna.out 
+
+ Process pid = 
+
+ Parameters summary: 
+    Reference file: genome_files/Mouse/rRNA_db/rfam-5.8s-database-id98.fasta
+        Seed length = 18
+        Pass 1 = 18, Pass 2 = 9, Pass 3 = 3
+        Gumbel lambda = 0.617555
+        Gumbel K = 0.343861
+        Minimal SW score based on E-value = 43
+    Number of seeds = 2
+    Edges = 4
+    SW match = 2
+    SW mismatch = -3
+    SW gap open penalty = 5
+    SW gap extend penalty = 2
+    SW ambiguous nucleotide = -3
+    SQ tags are not output
+    Number of alignment processing threads = 8
+    Reads file: genome_files/Mouse/tmp/Mouse/Test/preprocessing/Mouse1_2_sub.fastq
+    Total reads = 11003
+
+ Results:
+    Total reads passing E-value threshold = 4 (0.04)
+    Total reads failing E-value threshold = 10999 (99.96)
+    Minimum read length = 76
+    Maximum read length = 22
+    Mean read length    = 75
+
+ Coverage by database:
+    genome_files/Mouse/rRNA_db/rfam-5.8s-database-id98.fasta		0.04
+
+ Mon Aug  7 15:47:51 2023
+

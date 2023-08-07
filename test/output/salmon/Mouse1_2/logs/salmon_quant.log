@@ -1,0 +1,33 @@
+[2023-08-07 15:56:38.287] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2023-08-07 15:56:38.287] [jointLog] [info] Usage of --useErrorModel implies use of range factorization. rangeFactorization bins is being set to 4
+[2023-08-07 15:56:38.559] [jointLog] [info] numQuantThreads = 4
+[2023-08-07 15:56:41.473] [fileLog] [info] quantification processed 0 fragments so far
+
+[2023-08-07 15:56:41.473] [fileLog] [info] quantification processed 7364 fragments so far
+
+[2023-08-07 15:56:41.221] [jointLog] [info] replaced 0 non-ACGT nucleotides with random nucleotides
+[2023-08-07 15:56:41.553] [jointLog] [info] 
+
+
+Completed first pass through the alignment file.
+Total # of mapped reads : 7364
+# of uniquely mapped reads : 2876
+# ambiguously mapped reads : 4488
+
+
+
+[2023-08-07 15:56:41.571] [jointLog] [info] Computed 1,108 rich equivalence classes for further processing
+[2023-08-07 15:56:41.571] [jointLog] [info] Counted 7,364 total reads in the equivalence classes 
+[2023-08-07 15:56:41.585] [jointLog] [warning] Only 7364 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2023-08-07 15:56:41.589] [jointLog] [info] starting optimizer
+[2023-08-07 15:56:41.636] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2023-08-07 15:56:41.639] [jointLog] [info] iteration = 0 | max rel diff. = 65.6688
+[2023-08-07 15:56:41.994] [jointLog] [info] iteration = 100 | max rel diff. = 0.000332903
+[2023-08-07 15:56:42.004] [jointLog] [info] finished optimizer
+[2023-08-07 15:56:42.880] [jointLog] [info] Computing gene-level abundance estimates
+[2023-08-07 15:57:00.028] [jointLog] [info] There were 149419 transcripts mapping to 56691 genes
+[2023-08-07 15:57:00.029] [jointLog] [info] NOTE: We recommend using tximport (https://bioconductor.org/packages/release/bioc/html/tximport.html) for aggregating transcript-level salmon abundance estimates to the gene level.  It is more versatile, exposes more features, and allows considering multi-sample information during aggregation.
+[2023-08-07 15:57:00.318] [jointLog] [info] Aggregating expressions to gene level
+[2023-08-07 15:57:00.456] [jointLog] [info] done

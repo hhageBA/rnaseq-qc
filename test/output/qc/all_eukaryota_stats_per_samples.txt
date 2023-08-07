@@ -1,0 +1,3 @@
+Sample	Raw_reads	Cleaned_reads	Uniquely_mapped	Perc_uniquely_mapped	Multi_mapped	Perc_multi_mapped	Perc_rRNA	Perc_globin
+Mouse1_1	20868	20276	4177	41.20	5675	55.98	0.08	57.44
+Mouse1_2	22536	22006	4700	42.72	6017	54.69	0.04	56.28

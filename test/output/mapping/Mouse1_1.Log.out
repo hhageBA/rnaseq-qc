@@ -1,0 +1,272 @@
+STAR version=2.7.9a
+STAR compilation time,server,dir=2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR --runThreadN 8 --genomeDir genome_files/Mouse/star_index --readFilesIn Analyses/Mouse/Test/preprocessing/Mouse1_1_R1_001_preprocessed.fastq.gz Analyses/Mouse/Test/preprocessing/Mouse1_1_R2_001_preprocessed.fastq.gz --sjdbGTFfile genome_files/Mouse/gencode.vM30.annotation.gtf --outSAMtype BAM SortedByCoordinate --runDirPerm All_RWX --quantMode TranscriptomeSAM --readFilesCommand zcat --outFileNamePrefix Analyses/Mouse/Test/mapping/Mouse1_1.
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 Analyses/Mouse/Test/mapping/Mouse1_1.
+###### All USER parameters from Command Line:
+runThreadN                    8     ~RE-DEFINED
+genomeDir                     genome_files/Mouse/star_index     ~RE-DEFINED
+readFilesIn                   Analyses/Mouse/Test/preprocessing/Mouse1_1_R1_001_preprocessed.fastq.gz   Analyses/Mouse/Test/preprocessing/Mouse1_1_R2_001_preprocessed.fastq.gz        ~RE-DEFINED
+sjdbGTFfile                   genome_files/Mouse/gencode.vM30.annotation.gtf     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+runDirPerm                    All_RWX     ~RE-DEFINED
+quantMode                     TranscriptomeSAM        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+outFileNamePrefix             Analyses/Mouse/Test/mapping/Mouse1_1.     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        8
+runDirPerm                        All_RWX
+genomeDir                         genome_files/Mouse/star_index
+readFilesIn                       Analyses/Mouse/Test/preprocessing/Mouse1_1_R1_001_preprocessed.fastq.gz   Analyses/Mouse/Test/preprocessing/Mouse1_1_R2_001_preprocessed.fastq.gz   
+readFilesCommand                  zcat   
+outFileNamePrefix                 Analyses/Mouse/Test/mapping/Mouse1_1.
+outSAMtype                        BAM   SortedByCoordinate   
+sjdbGTFfile                       genome_files/Mouse/gencode.vM30.annotation.gtf
+quantMode                         TranscriptomeSAM   
+
+-------------------------------
+##### Final effective command line:
+STAR   --runThreadN 8   --runDirPerm All_RWX   --genomeDir genome_files/Mouse/star_index   --readFilesIn Analyses/Mouse/Test/preprocessing/Mouse1_1_R1_001_preprocessed.fastq.gz   Analyses/Mouse/Test/preprocessing/Mouse1_1_R2_001_preprocessed.fastq.gz      --readFilesCommand zcat      --outFileNamePrefix Analyses/Mouse/Test/mapping/Mouse1_1.   --outSAMtype BAM   SortedByCoordinate      --sjdbGTFfile genome_files/Mouse/gencode.vM30.annotation.gtf   --quantMode TranscriptomeSAM   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+
+   Input read files for mate 1 :
+-rw-rw-rw- 1 hhage bioaster 320397 Aug  7 15:29 Analyses/Mouse/Test/preprocessing/Mouse1_1_R1_001_preprocessed.fastq.gz
+
+   readsCommandsFile:
+exec > "Analyses/Mouse/Test/mapping/Mouse1_1._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "Analyses/Mouse/Test/preprocessing/Mouse1_1_R1_001_preprocessed.fastq.gz"
+
+
+   Input read files for mate 2 :
+-rw-rw-rw- 1 hhage bioaster 330179 Aug  7 15:29 Analyses/Mouse/Test/preprocessing/Mouse1_1_R2_001_preprocessed.fastq.gz
+
+   readsCommandsFile:
+exec > "Analyses/Mouse/Test/mapping/Mouse1_1._STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "Analyses/Mouse/Test/preprocessing/Mouse1_1_R2_001_preprocessed.fastq.gz"
+
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate      --runThreadN 25   --genomeDir star_index/   --genomeFastaFiles GRCm39.primary_assembly.genome.fa      --sjdbGTFfile gencode.vM30.annotation.gtf   --sjdbOverhang 74
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              GRCm39.primary_assembly.genome.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  74     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   gencode.vM30.annotation.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               2781542086   22254521911        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 61
+1	chr1	195154279	0
+2	chr2	181755017	195297280
+3	chr3	159745316	377225216
+4	chr4	156860686	537133056
+5	chr5	151758149	694157312
+6	chr6	149588044	845938688
+7	chr7	144995196	995622912
+8	chr8	130127694	1140850688
+9	chr9	124359700	1271136256
+10	chr10	130530862	1395654656
+11	chr11	121973369	1526202368
+12	chr12	120092757	1648361472
+13	chr13	120883175	1768685568
+14	chr14	125139656	1889796096
+15	chr15	104073951	2015100928
+16	chr16	98008968	2119434240
+17	chr17	95294699	2217476096
+18	chr18	90720763	2312896512
+19	chr19	61420004	2403860480
+20	chrX	169476592	2465464320
+21	chrY	91455967	2635071488
+22	chrM	16299	2726559744
+23	GL456210.1	169725	2726821888
+24	GL456211.1	241735	2727084032
+25	GL456212.1	153618	2727346176
+26	GL456219.1	175968	2727608320
+27	GL456221.1	206961	2727870464
+28	GL456233.2	559103	2728132608
+29	GL456239.1	40056	2728919040
+30	GL456354.1	195993	2729181184
+31	GL456359.1	22974	2729443328
+32	GL456360.1	31704	2729705472
+33	GL456366.1	47073	2729967616
+34	GL456367.1	42057	2730229760
+35	GL456368.1	20208	2730491904
+36	GL456370.1	26764	2730754048
+37	GL456372.1	28664	2731016192
+38	GL456378.1	31602	2731278336
+39	GL456379.1	72385	2731540480
+40	GL456381.1	25871	2731802624
+41	GL456382.1	23158	2732064768
+42	GL456383.1	38659	2732326912
+43	GL456385.1	35240	2732589056
+44	GL456387.1	24685	2732851200
+45	GL456389.1	28772	2733113344
+46	GL456390.1	24668	2733375488
+47	GL456392.1	23629	2733637632
+48	GL456394.1	24323	2733899776
+49	GL456396.1	21240	2734161920
+50	JH584295.1	1976	2734424064
+51	JH584296.1	199368	2734686208
+52	JH584297.1	205776	2734948352
+53	JH584298.1	184189	2735210496
+54	JH584299.1	953012	2735472640
+55	JH584300.1	182347	2736521216
+56	JH584301.1	259875	2736783360
+57	JH584302.1	155838	2737045504
+58	JH584303.1	158099	2737307648
+59	JH584304.1	114452	2737569792
+60	MU069434.1	8412	2737831936
+61	MU069435.1	31129	2738094080
+--sjdbOverhang = 74 taken from the generated genome
+Started loading the genome: Mon Aug  7 15:48:02 2023
+
+Genome: size given as a parameter = 2781542086
+SA: size given as a parameter = 22254521911
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=2781542086;  nSAbyte=22254521911
+GstrandBit=32   SA number of indices=5395035614
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 2781542086 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 2781542086 bytes
+SA file size: 22254521911 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 22254521911 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Mon Aug  7 15:51:44 2023
+
+Processing splice junctions database sjdbN=289838,   pGe.sjdbOverhang=74 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Aug 07 15:51:45   Loaded database junctions from the generated genome genome_files/Mouse/star_index//sjdbList.out.tab: 289838 total junctions
+
+Aug 07 15:51:45 ..... processing annotations GTF
+Processing pGe.sjdbGTFfile=genome_files/Mouse/gencode.vM30.annotation.gtf, found:
+		149419 transcripts
+		868862 exons (non-collapsed)
+		289898 collapsed junctions
+Total junctions: 579736
+Aug 07 15:52:11 ..... finished GTF processing
+
+WARNING: long repeat for junction # 82710 : chr5 112922393 112922883; left shift = 255; right shift = 69
+WARNING: long repeat for junction # 85107 : chr5 123328298 123329023; left shift = 255; right shift = 19
+WARNING: long repeat for junction # 94378 : chr6 48731569 48732130; left shift = 81; right shift = 255
+WARNING: long repeat for junction # 126684 : chr7 141361933 141364041; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 205777 : chr13 36192501 36373186; left shift = 255; right shift = 29
+WARNING: long repeat for junction # 213508 : chr13 119631671 120070727; left shift = 36; right shift = 255
+WARNING: long repeat for junction # 230058 : chr15 75976552 75988902; left shift = 0; right shift = 255
+WARNING: long repeat for junction # 372569 : chr5 112922393 112922883; left shift = 255; right shift = 69
+WARNING: long repeat for junction # 374966 : chr5 123328298 123329023; left shift = 255; right shift = 19
+WARNING: long repeat for junction # 384238 : chr6 48731569 48732130; left shift = 81; right shift = 255
+WARNING: long repeat for junction # 416550 : chr7 141361933 141364041; left shift = 255; right shift = 255
+WARNING: long repeat for junction # 495657 : chr13 36192501 36373186; left shift = 255; right shift = 29
+WARNING: long repeat for junction # 503391 : chr13 119631671 120070727; left shift = 36; right shift = 255
+WARNING: long repeat for junction # 519942 : chr15 75976552 75988902; left shift = 0; right shift = 255
+Aug 07 15:52:12   Finished preparing junctions
+Aug 07 15:52:12 ..... inserting junctions into the genome indices
+Aug 07 15:52:28   Finished SA search: number of new junctions=0, old junctions=289838
+Aug 07 15:52:28   Finished sorting SA indicesL nInd=0
+Genome size with junctions=2781542086  2738356224   43185862
+GstrandBit1=32   GstrandBit=32
+Aug 07 15:53:46   Finished inserting junction indices
+Aug 07 15:53:49   Finished SAi
+Aug 07 15:53:49 ..... finished inserting junctions into genome
+Loaded transcript database, nTr=149419
+Loaded exon database, nEx=868862
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Starting to map file # 0
+mate 1:   Analyses/Mouse/Test/preprocessing/Mouse1_1_R1_001_preprocessed.fastq.gz
+mate 2:   Analyses/Mouse/Test/preprocessing/Mouse1_1_R2_001_preprocessed.fastq.gz
+Created thread # 6
+Created thread # 7
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #2
+Completed: thread #4
+Completed: thread #3
+Completed: thread #6
+Completed: thread #5
+Completed: thread #0
+Completed: thread #7
+BAM sorting: 40214 mapped reads
+BAM sorting bins genomic start loci:
+1	2	14951773
+2	4	33176319
+3	5	131342142
+4	6	103461942
+5	6	103461979
+6	6	103462665
+7	6	103462693
+8	6	103462746
+9	6	103462796
+10	6	103462837
+11	6	103463015
+12	6	103475941
+13	6	103476663
+14	6	103476716
+15	6	103476769
+16	6	103476805
+17	6	103476840
+18	6	103476855
+19	6	103477008
+20	6	103477063
+21	6	103477068
+22	7	19543190
+23	10	31996232
+24	10	32233671
+25	10	32233674
+26	10	32233692
+27	10	32233741
+28	10	32233775
+29	10	32233934
+30	10	32233968
+31	10	32234016
+32	10	32234079
+33	10	32246487
+34	10	32246491
+35	10	32246566
+36	10	32246604
+37	10	32246755
+38	10	32246793
+39	10	32246824
+40	10	32246870
+41	10	32246891
+42	10	32246917
+43	10	116285049
+44	11	105802209
+45	14	77692110
+46	17	42463102
+47	21	280
+48	21	1552
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Aug 07 15:53:56 ..... started sorting BAM
+Max memory needed for sorting = 311390
+ALL DONE!

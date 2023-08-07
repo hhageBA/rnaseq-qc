@@ -1,0 +1,19 @@
+processing genome_files/Mouse/gencode.vM30.annotation.bed ... Done
+processing Analyses/Mouse/Test/mapping/Mouse1_1.Aligned.sortedByCoord.out.bam ... Finished
+
+Total Reads                   19704
+Total Tags                    24650
+Total Assigned Tags           24031
+=====================================================================
+Group               Total_bases         Tag_count           Tags/Kb             
+CDS_Exons           36744435            17329               0.47              
+5'UTR_Exons         36547839            3583                0.10              
+3'UTR_Exons         61025010            1368                0.02              
+Introns             1096734484          1637                0.00              
+TSS_up_1kb          34893542            7                   0.00              
+TSS_up_5kb          158168155           15                  0.00              
+TSS_up_10kb         283595916           40                  0.00              
+TES_down_1kb        37334442            31                  0.00              
+TES_down_5kb        161918615           69                  0.00              
+TES_down_10kb       285618398           74                  0.00              
+=====================================================================

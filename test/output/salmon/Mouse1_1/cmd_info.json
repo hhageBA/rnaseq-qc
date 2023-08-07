@@ -1,0 +1,9 @@
+{
+    "salmon_version": "0.12.0",
+    "targets": "genome_files/Mouse/gencode.vM30.transcripts.cleaned.fa",
+    "libType": "A",
+    "alignments": "Analyses/Mouse/Test/mapping/Mouse1_1.Aligned.toTranscriptome.out.bam",
+    "geneMap": "genome_files/Mouse/gencode.vM30.annotation.gtf",
+    "output": "Analyses/Mouse/Test/salmon/Mouse1_1",
+    "auxDir": "aux_info"
+}

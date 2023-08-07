@@ -1,0 +1,34 @@
+[2023-08-07 15:54:02.838] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2023-08-07 15:54:02.838] [jointLog] [info] Usage of --useErrorModel implies use of range factorization. rangeFactorization bins is being set to 4
+[2023-08-07 15:54:03.069] [jointLog] [info] numQuantThreads = 4
+[2023-08-07 15:54:07.296] [jointLog] [info] replaced 0 non-ACGT nucleotides with random nucleotides
+[2023-08-07 15:54:07.619] [jointLog] [info] 
+
+
+Completed first pass through the alignment file.
+Total # of mapped reads : 6529
+# of uniquely mapped reads : 2630
+# ambiguously mapped reads : 3899
+
+
+
+[2023-08-07 15:54:07.632] [jointLog] [info] Computed 994 rich equivalence classes for further processing
+[2023-08-07 15:54:07.632] [jointLog] [info] Counted 6,529 total reads in the equivalence classes 
+[2023-08-07 15:54:07.644] [jointLog] [warning] Only 6529 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2023-08-07 15:54:07.647] [jointLog] [info] starting optimizer
+[2023-08-07 15:54:07.685] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2023-08-07 15:54:07.688] [jointLog] [info] iteration = 0 | max rel diff. = 34.9243
+[2023-08-07 15:54:07.540] [fileLog] [info] quantification processed 0 fragments so far
+
+[2023-08-07 15:54:07.540] [fileLog] [info] quantification processed 6529 fragments so far
+
+[2023-08-07 15:54:08.000] [jointLog] [info] iteration = 100 | max rel diff. = 0.0549581
+[2023-08-07 15:54:08.035] [jointLog] [info] iteration = 112 | max rel diff. = 0.00768459
+[2023-08-07 15:54:08.044] [jointLog] [info] finished optimizer
+[2023-08-07 15:54:08.941] [jointLog] [info] Computing gene-level abundance estimates
+[2023-08-07 15:54:25.922] [jointLog] [info] There were 149419 transcripts mapping to 56691 genes
+[2023-08-07 15:54:25.923] [jointLog] [info] NOTE: We recommend using tximport (https://bioconductor.org/packages/release/bioc/html/tximport.html) for aggregating transcript-level salmon abundance estimates to the gene level.  It is more versatile, exposes more features, and allows considering multi-sample information during aggregation.
+[2023-08-07 15:54:26.291] [jointLog] [info] Aggregating expressions to gene level
+[2023-08-07 15:54:26.445] [jointLog] [info] done

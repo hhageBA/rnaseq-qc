@@ -1,0 +1,3 @@
+"ID" "nbMeanGenes" "Group"
+"Mouse1_1" "Mouse1_1" 24 "A"
+"Mouse1_2" "Mouse1_2" 30 "B"
